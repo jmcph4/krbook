@@ -25,8 +25,11 @@ $(BIN_DIR)/1_9: $(SRC_DIR)/1_9.c
 $(BIN_DIR)/1_10: $(SRC_DIR)/1_10.c
 	$(CC) $^ $(CFLAGS) -o $@
 
+$(BIN_DIR)/1_12: $(SRC_DIR)/1_12.c
+	$(CC) $^ $(CFLAGS) -o $@
+
 .PHONY: all
-all: $(BIN_DIR)/1_3 $(BIN_DIR)/1_4 $(BIN_DIR)/1_5 $(BIN_DIR)/1_7 $(BIN_DIR)/1_8 $(BIN_DIR)/1_9 $(BIN_DIR)/1_10
+all: $(BIN_DIR)/1_3 $(BIN_DIR)/1_4 $(BIN_DIR)/1_5 $(BIN_DIR)/1_7 $(BIN_DIR)/1_8 $(BIN_DIR)/1_9 $(BIN_DIR)/1_10 $(BIN_DIR)/1_12
 
 .PHONY: clean
 clean:
